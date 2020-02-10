@@ -44,8 +44,8 @@ Jennifer Hemmerich, jennifer.hemmerich[at]univie.ac.at
  
  For explanations of the models see:
  
- [Gradient Boosting](GradientBoosting Model/README.md)
+[Gradient Boosting](GradientBoosting Model/README.md)
  
- [Neural networks](NeuralNetwork Models/README.md)
+[Neural networks](NeuralNetwork Models/README.md)
  
 
