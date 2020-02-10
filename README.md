@@ -24,7 +24,7 @@ Jennifer Hemmerich, jennifer.hemmerich[at]univie.ac.at
  
  ### Neural Network
  The Neural network was trained with the script developed in our COVER paper (https://github.com/PharminfoVienna/COVER-Conformational-Oversampling). Please have a look at the dependencies there. 
- To run predictions you need:
+ To run predictions you need the above mentioned KNIME installation (for descriptor calculation) and in addition:
  
  Python 3.6 >=, with
  - scikit learn >= 20.X

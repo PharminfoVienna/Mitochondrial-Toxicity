@@ -7,36 +7,48 @@ To predict your data you need your dataset as an sdf file and follow these steps
 
 2. run the predictions.py file the options are as follows:
 
-  predictions.py [-h] --input-file INPUT_FILE
+`python predictions.py --help`
+
+outputs:
+
+```
+predictions.py [-h] --input-file INPUT_FILE
                       [--activity-column ACTIVITY_COLUMN]
                       [--model-dir MODEL_DIR] [--output-dir OUTPUT_DIR]
                       [--output-file-predictions OUTPUT_FILE_PREDICTIONS]
                       [--output-file-performance OUTPUT_FILE_PERFORMANCE]
-                      [--compound-ids COMPOUND_IDS]
+                      [--compound-ids COMPOUND_IDS] [--scaler SCALER]
 
-  optional arguments:
-    -h, --help            show this help message and exit
-    --input-file INPUT_FILE
-                          Specifies the input file which should be predicted.
-                          This argument is required. The file needs to be an sdf
-                          file!
-    --activity-column ACTIVITY_COLUMN
-                          Specifies the sdf tag which contains the compounds
-                          activities. Defaults to <activity>
-    --model-dir MODEL_DIR
-                          Specifies the directory where the model files are
-                          located. Defaults to current working directory.
-    --output-dir OUTPUT_DIR
-                          Specifies the directory for the output files. Defaults
-                          to current working directory.
-    --output-file-predictions OUTPUT_FILE_PREDICTIONS
-                          Specifies the filename for the output files. Defaults
-                          to predictions_<current_date>.
-    --output-file-performance OUTPUT_FILE_PERFORMANCE
-                          Specifies the filename for the output files. Defaults
-                          to performance_<current_date>.
-    --compound-ids COMPOUND_IDS
-                          Specifies the column which contains the compound IDs
+optional arguments:
+  -h, --help            show this help message and exit
+  --input-file INPUT_FILE
+                        Specifies the input file which should be predicted.
+                        This argument is REQUIRED. The file needs to be an sdf
+                        file!
+  --activity-column ACTIVITY_COLUMN
+                        Specifies the sdf tag which contains the compounds
+                        activities. Defaults to <activity>
+  --model-dir MODEL_DIR
+                        Specifies the directory where the model files are
+                        located. Defaults to directory Final_models, found in
+                        the working directory.
+  --output-dir OUTPUT_DIR
+                        Specifies the directory for the output files. Defaults
+                        to current working directory.
+  --output-file-predictions OUTPUT_FILE_PREDICTIONS
+                        Specifies the filename for the output files. Defaults
+                        to predictions_<current_date>.
+  --output-file-performance OUTPUT_FILE_PERFORMANCE
+                        Specifies the filename for the output files. Defaults
+                        to performance_<current_date>.
+  --compound-ids COMPOUND_IDS
+                        Specifies the column which contains the compound IDs
+                        (if present in the dataset).Defaults to <ID>.
+  --scaler SCALER       Specifies the file which contains the scaler for the
+                        input descriptors Defaults to scaler in
+                        ./Final_models/scaler.pkl.
+```
+
 
 If you use the same folder structure as in the GitHub project the script should run as follows
 
