@@ -42,6 +42,9 @@ Jennifer Hemmerich, jennifer.hemmerich[at]univie.ac.at
  
  The supplemental information contains the used descriptors (Supplement A), the Drugbank Molecules with positive predictions or structural alerts and the respective literature indicationg a possible mitochondrial toxicity (Supplement B). Supplement C contains the SMILES patterns of the alerts as well as their predictivty in terms of positive predictive value.
  
+ If you use your own data please make sure to standardise the structures (i.e. remove salts or fragments, neutralize the charges etc) as this could lead to many false predictions. If you need help, please have a look at our Standardisation workflow at https://github.com/PharminfoVienna/Chemical-Structure-Standardisation
+ 
+ 
  For explanations of the models see:
  
 [Gradient Boosting](GradientBoosting%20Model/README.md)
